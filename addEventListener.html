@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<title>Event Handling</title>
+</head>
+<body><form>  
+<fieldset>
+<div>
+<h1 onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'"> MY LIFE</h1></div>		
+<div> <label> Name: </label>
+<input type="text" id="name"   ></div><br>
+<div> <label> LastName: </label>
+<input type="text" id="lname" onfocus="this.style.backgroundColor='green'" onblur="this.style.backgroundColor='white'"></div><br>
+<div> <label> DOB: </label>
+<input type="date" id="dob" onfocus="this.style.backgroundColor='green'" onblur="this.style.backgroundColor='white'"></div><br>
+<input type="submit" value="SUBMIT">
+</fieldset></form>
+<script>
+let name=document.getElementById('name');
+name.onfocus=function(){
+name.style.backgroundColor="green";
+}
+name.onblur=function(){
+name.style.backgroundColor="white";
+}
+
+</script>
+</body>
+</html>

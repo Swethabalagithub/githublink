@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<title> html learning </title>
+<style>
+body{
+background-color:green;}
+h1{
+color:white;
+margin-left:570px;}
+form{
+background-color:white;
+width:500px;
+height:500px;
+margin-left:450px;
+border:10px dashed red;
+padding:5px;
+border-radius:5px;}
+</style>
+</head>
+<body>
+<h1><ins> Student Information</ins></h1>
+<form  action="register.html" method="get" target="_blank" autocomplete="off">
+<div>
+<label for="fname">FRIST NAME:</label>
+<input id="fname" type="text" value="" name="fname" required></div><br>
+<div>
+<label for="lname">LAST NAME:</label>
+<input id="lname" type="text" value="" name="lname" required></div><br>
+<div>
+<label for="dob">DATE OF BIRTH:</label>
+<select id="dob" ><option value="">day</option>
+<option value="">1</option>
+<option value="">2</option>
+<option value="">3</option><option value="">4</option><option value="">5</option>
+<option value="">6</option><option value="">7</option>
+<option value="">8</option><option value="">9</option><option value="">10</option>
+<option value="">11</option><option value="">12</option>
+<option value="">13</option><option value="">14</option>
+<option value="">15</option><option value="">16</option>
+<option value="">17</option><option value="">18</option>
+<option value="">19</option><option value="">20</option><option value="">21</option>
+<option value="">22</option><option value="">23</option><option value="">24</option>
+<option value="">25</option>
+<option value="">26</option>
+<option value="">27</option>
+<option value="">28</option>
+<option value="">29</option>
+<option value="">30</option><option value="">31</option>
+</select>
+<select id="dob" > <option value=""> month</option><option value=""> january</option><option value=""> feb</option>
+<option value="">march</option><option value="">april</option><option value=""> may</option><option value=""> june</option> <option value=""> july</option>
+<option value="">august</option><option value=""> september</option><option value=""> october</option>
+<option value=""> november</option><option value="">december</option></select>
+<select id="dob"><option value="">year</option>
+<option value="">2000</option><option value="">2001</option><option value="">2002</option><option value="">2003</option>
+</select></div><br>
+<div>
+<label for="email">Email:</label>
+<input id="email" type="email" value="" placeholder="enter valid email" required></div><br>
+<div>
+<label for="mn">Mobile number:</label>
+<input id="mn" type="tel" value="" pattern="[0-9]{10}" maxlength="10" placeholder="enter 10 digit mobiel number" size="30" required></div><br>
+<div>
+<label>GENDER:</label>
+<label for="male">MALE</label>
+<input id="male" type="radio" value="" name="gender"><label for="female">FEMALE</label>
+<input id="female" type="radio" value="" name="gender"></div><br>
+<div>
+<label for="address">ADDRESS:</label>
+<textarea id="address" maxlength="150" value="" required></textarea></div><br>
+<div>
+<label for="state"> STATE:</label>
+<input id="state" type="text" pattern="[A-Z]{3}" value="" name="state" required></div><br>
+</div><br>
+<div> 
+<label for="country">COUNTRY:</label>
+<input id="country" type="text"value="INDIA" readonly disabled> </div><br>
+<div>
+<label>HOOBBIES:</label>
+<input id="editing" type="checkbox" value=""><label for="editing">EDITING</label>
+<input id="photo" type="checkbox" value=""><label for="photo">PHOTOGRAPHY</label>
+<input id="design" type="checkbox" value="" checked><label for="design">DESIGNING</label></div><br>
+<div><input type="submit" value="SUBMIT">
+<input type="reset" value="RESET">
+</div><br>
+</form>
+</body>
+</html>
